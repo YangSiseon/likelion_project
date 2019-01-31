@@ -1,0 +1,13 @@
+<h1>Result</h1>
+number of words is {{total}}
+<br>
+<a href="{%url 'home'%}">retry</a>
+
+<h2>text</h2>
+{{full}}
+
+<h2>words</h2>
+{%for word, howmany in dictionary%}
+{{word}} : {{howmany}}
+<br>
+{%endfor%}
